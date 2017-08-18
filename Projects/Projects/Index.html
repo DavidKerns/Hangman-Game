@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman's Noose</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src = "script.js" id="origScript"></script>
+
+  </head>
+  <body>
+
+    <canvas id="canvas" width="700" height="400" style="border:thin solid black;">Your browser does not support the HTML5 canvas tag.</canvas>
+    <div>
+      <h1 class="welcome">Welcome to Hangman</h1>
+      <h3 class="lives-left">You have five lives... Use them wisely</h3>
+    </div>
+    <div class="container start">
+    <div class="row category">
+      <button class="single col-6" type="button" name="Single Player">Single Player</button>
+        <button class="multi col-6" type="button" name="Multiplayer">Multiplayer</button>
+      </div>
+    </div>
+    <div class="multi-input">
+      <div class="row">
+      <textarea name= "input-word" placeholder="Your text here!" id="input" height="200px" width="400px"></textarea>
+      <button class="new-word col-6" type="button" name="button">Enter</button>
+      <button class="multi-go-back col-6" type="button" name="button">Go Back</button>
+    </div>
+  </div>
+    <div class="hiddenWordGoesHere">
+    </div>
+    <p class="lives-left">Lives:<span class="lives"></span></p>
+    <div class="categories"></div>
+
+  <div class="container">
+    <div class="row">
+  <div class="letter-row">
+    <button class="letter-buttons A" type="button" name="A">A</button>
+    <button class="letter-buttons B"  type="button" name="B">B</button>
+    <button class="letter-buttons C"  type="button" name="C">C</button>
+    <button class="letter-buttons D"  type="button" name="D">D</button>
+    <button class="letter-buttons E"  type="button" name="E">E</button>
+    <button class="letter-buttons F"  type="button" name="F">F</button>
+    <button class="letter-buttons G"  type="button" name="G">G</button>
+    <button class="letter-buttons H"  type="button" name="H">H</button>
+    <button class="letter-buttons I"  type="button" name="I">I</button>
+    <button class="letter-buttons J"  type="button" name="J">J</button>
+    <button class="letter-buttons K"  type="button" name="K">K</button>
+    <button class="letter-buttons L"  type="button" name="L">L</button>
+    <button class="letter-buttons M"  type="button" name="M">M</button>
+    <button class="letter-buttons N"  type="button" name="N">N</button>
+    <button class="letter-buttons O"  type="button" name="O">O</button>
+    <button class="letter-buttons P"  type="button" name="P">P</button>
+    <button class="letter-buttons Q"  type="button" name="Q">Q</button>
+    <button class="letter-buttons R"  type="button" name="R">R</button>
+    <button class="letter-buttons S"  type="button" name="S">S</button>
+    <button class="letter-buttons T"  type="button" name="T">T</button>
+    <button class="letter-buttons U"  type="button" name="U">U</button>
+    <button class="letter-buttons V"  type="button" name="V">V</button>
+    <button class="letter-buttons W" type="button" name="W">W</button>
+    <button class="letter-buttons X" type="button" name="X">X</button>
+    <button class="letter-buttons Y"  type="button" name="Y">Y</button>
+    <button class="letter-buttons Z" type="button" name="Z">Z</button>
+  </div>
+</div>
+</div>
+<audio  autoplay="true">
+  <source src="TGTBTU.mp3" type="audio/mpeg">
+</audio>
+  <iframe src="https://giphy.com/embed/8maWiWlmIcVWM" width="1000" height="435" frameBorder="0" class=win-gif allowFullScreen></iframe>
+  <iframe src="https://giphy.com/embed/l2JejlXI4wC95Nniw" width="1000" height="540" frameBorder="0" class="loss-gif" allowFullScreen></iframe>
+  <button class="reset">Play again</button>
+  </body>
+</html>
